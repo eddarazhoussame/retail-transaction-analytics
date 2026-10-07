@@ -1,0 +1,48 @@
+# Raw and processed datasets, including generated analysis outputs.
+/data/[Rr]aw/**
+/data/processed/**
+
+# Keep directories visible so documentation and source files remain trackable.
+!/data/**/
+!/data/**/README.md
+!/data/**/*.py
+!/data/**/*.sql
+!/data/**/*.pbix
+
+# SQLite databases and their temporary journal files.
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite-journal
+*.sqlite-shm
+*.sqlite-wal
+*.sqlite3
+*.sqlite3-journal
+*.sqlite3-shm
+*.sqlite3-wal
+
+# Python bytecode and tool caches.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Python virtual environments.
+.venv/
+venv/
+env/
+.env/
+ENV/
+
+# Power BI local caches, locks, and temporary files (keep .pbix dashboards).
+.pbi/
+~$*.pbix
+~$*.pbit
+*.pbix.tmp
+*.pbit.tmp
+*.pbix.lock
+*.pbit.lock
